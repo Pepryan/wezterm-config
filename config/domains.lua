@@ -12,31 +12,31 @@ local options = {
 }
 
 if platform.is_win then
-   options.ssh_domains = {
-      {
-         name = 'ssh:wsl',
-         remote_address = 'localhost',
-         multiplexing = 'None',
-         default_prog = { 'fish', '-l' },
-         assume_shell = 'Posix',
-      },
-   }
+   -- options.ssh_domains = {
+   --    {
+   --       name = 'ssh:wsl',
+   --       remote_address = 'localhost',
+   --       multiplexing = 'None',
+   --       default_prog = { 'fish', '-l' },
+   --       assume_shell = 'Posix',
+   --    },
+   -- }
 
    options.wsl_domains = {
       {
-         name = 'wsl:ubuntu-fish',
+         name = 'wsl:ubuntu',
          distribution = 'Ubuntu',
-         username = 'kevin',
-         default_cwd = '/home/kevin',
-         default_prog = { 'fish', '-l' },
-      },
-      {
-         name = 'wsl:ubuntu-bash',
-         distribution = 'Ubuntu',
-         username = 'kevin',
-         default_cwd = '/home/kevin',
+         username = 'ryan',
+         default_cwd = '/home/ryan',
          default_prog = { 'bash', '-l' },
       },
+      -- {
+      --    name = 'wsl:ubuntu-bash',
+      --    distribution = 'Ubuntu',
+      --    username = 'kevin',
+      --    default_cwd = '/home/kevin',
+      --    default_prog = { 'bash', '-l' },
+      -- },
    }
 end
 

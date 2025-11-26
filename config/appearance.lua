@@ -1,6 +1,6 @@
 local gpu_adapters = require('utils.gpu-adapter')
 local backdrops = require('utils.backdrops')
-local colors = require('colors.custom')
+-- local colors = require('colors.custom')
 
 return {
    max_fps = 120,
@@ -19,7 +19,40 @@ return {
    cursor_blink_rate = 650,
 
    -- color scheme
-   colors = colors,
+   -- colors = colors,
+   -- Catppuccin: pastel adem, enak buat long session
+   -- color_scheme = 'Catppuccin Mocha',
+   -- color_scheme = 'Catppuccin Macchiato',
+
+   -- Tokyo Night: nuansa biru ungu, kontras tinggi
+   color_scheme = 'Tokyo Night',
+   -- color_scheme = 'Tokyo Night Storm',
+   -- color_scheme = 'Tokyo Night (Gogh)',
+   
+   -- Dracula: klasik dark, high contrast
+   -- config.color_scheme = 'Dracula (Official)'
+   -- atau:
+   -- color_scheme = 'Dracula',
+
+   -- Rosé Pine: earthy / cozy
+   -- color_scheme = 'rose-pine-moon',
+   -- color_scheme = 'rose-pine',
+
+   -- config.color_scheme = 'Builtin Solarized Dark'
+   -- config.color_scheme = 'Builtin Pastel Dark'
+   -- config.color_scheme = 'Grayscale Dark (base16)'
+   -- config.color_scheme = 'One Dark (Gogh)'
+   -- color_scheme = 'Solarized Dark Higher Contrast',
+
+   -- config.color_scheme = 'Gruvbox Material Dark Soft'
+   -- config.color_scheme = 'Gruvbox Material Dark Medium'
+   -- config.color_scheme = 'Everforest Dark (Gogh)'
+   -- config.color_scheme = 'Nord (Gogh)'
+   -- color_scheme = 'Kanagawa (Gogh)',
+   -- config.color_scheme = 'Ayu Mirage (Gogh)'
+   -- config.color_scheme = 'Everforest Dark (Gogh)'
+
+   -- color_scheme = 'Operator Mono Dark',
 
    -- background: pass in `true` if you want wezterm to start with focus mode on (no bg images)
    background = backdrops:initial_options(false),
